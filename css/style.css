@@ -1,0 +1,430 @@
+@font-face{
+  font-family: Calisto;
+  src: url(/calisto-mt/calisto.ttf);
+}
+.text-underline{
+  text-decoration: underline !important;
+}
+body{
+  font-family: Calisto;
+}
+@media (max-width: 376px) {
+  #serviceCardRow .card-footer{
+    /* font-family: Calisto; */
+    font-size: 14px;
+  }
+  #jumbotronIndex h1,{
+    font-size: 0px;
+  }
+
+
+
+}
+.card-img-top {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.nav-logo{
+  height:120px;
+}
+
+nav li{
+  display: inline-block;
+  
+}
+nav li a{
+  text-transform: uppercase;
+}
+
+
+/* nav{
+  
+} */
+nav ul{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.nav-line{
+  display: inline-block;
+  width: 10%;
+  align-self: center;
+  
+  margin-bottom:30px;
+  position: static;
+}
+
+@media(max-width:992px){
+  .nav-line{
+    display: none;
+  }
+}
+
+#navHamburger{
+  margin-top: -86px;
+}
+
+
+#jumbotronIndex{
+  background-image: url(/img/Homepage-bg-lowres.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
+
+
+.green-overlay-index{
+  background:rgba(0, 68, 36,0.7);
+
+  left:0;
+  height:65vh;
+  /* opacity:0.7; */
+
+}
+
+
+.showcase-divider{
+  /* color:#FFFFFF; */
+  background-color:#FFFFFF;
+  height:1px;
+  width: 50vw;
+}
+.center-showcase-text{
+  /* height: inherit; */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0, 20px;
+  position:relative;
+  color: white;
+  opacity: 1; 
+  opacity: initial;
+  display:block;
+}
+
+.link-underline{
+  text-decoration: underline !important;
+  
+}
+.link-underline:hover{
+  font-weight: bold !important;
+}
+
+@media(max-width: 576px){
+  #indexJumbotronText h3{
+    font-size: 14px !important;
+  }
+  #indexJumbotronText h1{
+    font-size: 20px !important;
+  }
+  #indexJumbotronText a{
+    font-size: 14px !important;
+  }
+}
+
+/* Start the Services CSS */
+/* @media(max-width: 576px){
+  .col-xs-6{
+    flex-wrap: wrap;
+  }
+} */
+/* CARDS AREA -------------------------------------------------- */
+#anyQuestions{
+  text-align: center;
+}
+#contactUsBelowCards{
+  text-align: center;
+}
+@media(min-width:768px){
+  #anyQuestions{
+    text-align: right;
+  }
+  #contactUsBelowCards{
+    text-align: left;
+  }
+}
+
+/*ABOUT US CSS-------------------------------------------------- */
+#aboutUsDiv1{
+  /* height:254.4px; */
+  /* height: 200px; */
+  height: auto;
+  /* flex-basis: 50%px; */
+  /* width:398px; */
+  background-image: url(/img/AboutUsPics.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#trickyImage{
+  display: flex;
+  max-width: 100%;
+  justify-self: center;
+  
+  object-fit:contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* #aboutUsParagraph{
+   max-width:100%; 
+} */
+#trickyDiv{
+  background-image: url(/img/AboutUsPics.png);
+  background-size: contain;
+
+}
+
+/* OUR KENNEL----------------------------------------- */
+#ourKennelText p{
+  text-align: left;
+}
+#ourKennelText h2{
+  text-align: center;
+}
+#kennelImage{
+  display: flex;
+  max-width: 378px;
+  justify-self: center;
+  
+  object-fit:contain;
+  
+}
+/* smallest until medium size */
+@media(max-width:992px){
+  #ourKennelText p{
+    text-align: left !important;
+    order: 1;
+  }
+  #ourKennelImg{
+    order: 2;
+  }
+}
+
+/* CONTACT US---------------------------------------------------- */
+
+.thick-black-stylish-line{
+  width: 49vw;
+  height: 1px;
+  align-self: center;
+  background-color: black;
+  /* margin: auto; */
+}
+#contactRow{
+  margin-top: 67px ;
+}
+#footerBar{
+  /* padding: 0;
+  margin: 0; */
+  background-color: #DEE7E7;
+  
+}
+
+/* .left-footer{
+  /* will be text center on mobile view 
+  text-align: center;
+} */
+.right-footer{
+  /* will be text center on mobile view */
+  text-align: center;
+}
+.right-footer p{
+  margin-bottom: -1px;
+  margin-top: 4px;
+  
+}
+/* .right-footer{
+
+} */
+/* .right-footer br{
+  margin-top: 15px;
+  /* margin-bottom: 2px;
+} */
+
+#bottomBar{
+  background-color: #004424;
+}
+#bottomBar a{
+  color: white !important;
+}
+
+@media (max-width: 576px) { 
+  /* 365 */
+  .right-footer{
+    text-align: center !important;
+  }
+  .left-footer{
+    text-align: center !important;
+  }
+}
+/* START BOARDING PAGE ========================================================*/
+
+#jumbotronBoarding{
+  background-image: url(/img/jumbotronBoardingPic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:37vh;
+}
+.green-overlay-default{
+  background:rgba(0, 68, 36,0.7);
+  left:0;
+  height:37vh;
+  
+}
+
+
+.fancy-floaty-box{
+  border: 1px  solid black;
+  padding: auto;
+  box-sizing: border-box;
+  width: 80%;
+  
+}
+
+
+.we-provide-box-left{
+  width:80%;
+  margin-bottom: 18px;
+  margin-right: auto !important;
+  border: 1px solid #393E41;
+}
+.we-provide-box-right{
+  width:80%;
+  margin-bottom: 18px;
+  margin-left: auto !important;
+  border: 1px solid #393E41;
+}
+.dark-box{
+  border: 1px solid #393E41;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 2rem; */
+}
+.dark-box p{
+  margin: 0;
+  padding:0;
+}
+@media(max-width:576px){
+  .we-provide-box-left{
+    width:80%;
+    margin-bottom: 18px;
+    border: 1px solid #393E41;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .we-provide-box-right{
+    width:80%;
+    margin-bottom: 18px;
+    border: 1px solid #393E41;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+#boardingCardRow .card{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  flex-grow: 1;
+}
+#boardingCardRow .card .card-body{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  flex-grow:1;
+}
+
+/* START DAYCARE==================================================== */
+#jumbotronDaycare{
+  background-image: url(/img/daycareJumbotron.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:37vh;
+}
+@media (max-width: 576px) {
+  #whatIsDoggyDaycareImg{
+    padding-left: 0px;
+
+    margin-left: -5px;
+  }
+  /* #ourPlayZones{
+    margin-left: -13px;
+  } */
+  #OurPlayZonesImg{
+    order:2;
+  }
+  #OurPlayZonesText{
+    order: 1;
+  }
+  
+}
+#ourPlayZonesImg
+@media(max-width:768px){
+  .left-align-md-and-less{
+    text-align: left !important;
+  }
+}
+/* START CATTERY========================================================= */
+#jumbotronCattery{
+  background-image: url(/img/catteryShowcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:37vh;
+}
+
+@media (max-width: 768px) {
+  #catteryContactAndButtons{
+    order: 2;
+  }
+  #catteryRateBoxes{
+    order:1;
+  }
+  
+}
+@media (min-width: 768px) {
+  catteryNewClientButton{
+    margin-left: 3px;
+  }
+}
+
+.gallery-img-size{
+  height: 245px;
+}
+
+/* START GROOMING=================================================================== */
+#jumbotronGrooming{
+  background-image: url(/img/groomingjumbotron.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:37vh;
+}
+/* START ABOUT=================================================================== */
+#jumbotronAbout{
+  background-image: url(/img/aboutUsShowcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:37vh;
+}
+.transform-105:hover{
+  transform: scale(1.05);
+}
+/* START CONTACT=================================================================== */
+#jumbotronContact{
+  background-image: url(/img/contactUsShowcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:37vh;
+}

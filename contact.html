@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156975003-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156975003-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Stone Chapel Kennel & Cattery</title>
+</head>
+
+<body>
+  <!-- TODO black links that turn green when you hover over them -->
+  <!-- TODO make the entire card a link -->
+
+  <!-- CENTERED LOGO -->
+  <!-- NAVBAR -->
+  
+  <div class="container">
+    <div class="row justify-content-center ">
+      <a href="index.html">
+        <img class="nav-logo mt-3 mb-0" src="img/navlogo.jpg" alt="logo">
+      </a>
+    </div>
+  </div>  
+  
+  <div id="navBarIndex"class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button id="navHamburger" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#collapseablenavbar">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+      <div id="collapseablenavbar" class="collapse navbar-collapse">
+        <hr class="nav-line">
+        <ul class=" navbar-nav mx-auto mb-3">
+          
+          <li class="mx-3"><a href="index.html">home</a></li>
+          <li class="mx-3"><a href="boarding.html">boarding</a></li>
+          <li class="mx-3"><a href="daycare.html">doggie daycare</a></li>
+          <li class="mx-3"><a href="cattery.html">the cattery</a></li>
+          <li class="mx-3"><a href="grooming.html">grooming</a></li>
+          <li class="mx-3"><a href="about.html">Meet the Team</a></li>
+          <li class="mx-3"><a href="contact.html">contact</a></li>
+          
+        </ul>
+        <hr class="nav-line ">
+      </div>
+    </nav>
+  </div>
+  
+  <!-- NAV END  -->
+
+  <section id="jumbotronContact" class="mb-5">
+      <div class="green-overlay-default d-flex flex-column justify-content-center align-self-center ">
+        <div class="center-showcase-text">
+            <h1 class="text-center text-uppercase">Contact</h1>
+        </div>
+      </div>
+  </section>
+
+  <section id="">
+      <div class="container">
+        <div id="contactTextCenter" class="text-center mt-5 mb-5">
+          
+          <p class="mb-5">
+              Please Feel Free To Contact Us About Reservations, Or Any
+              Questions You Might Have!
+          </p>
+        </div>
+  
+        <div id="contactRow" class="row mb-5">
+          <div class="col-lg-6">
+            <!-- contact card -->
+            <div class="card p-3 shadow">
+              <form action="send_form_email.php" method="POST" role="form">
+                <div class="form-row mb-3">
+                  <div class="col">
+                    <input type="text" for="first_name" name="inputFirstName" placeholder="First Name" class="form-control">
+                  </div> 
+                  <div class="col">
+                    <input type="text" for="inputLastName" name="last_name" placeholder="Last Name" class="form-control">
+                  </div> 
+                </div>
+                <input type="email" for="inputEmail" name="email" placeholder="Email" class="form-control mb-3">
+                <input type="tel" for="inputTel" name="telephone" placeholder="Phone Number" class="form-control mb-3">
+                <textarea for="inputTextArea" name="comments" id="inputTextArea" cols="30" rows="10" placeholder="Send us a message!" class="form-control mb-3"></textarea>
+              
+  
+                <input type="submit" name="submit" for="submit" value="Submit" class="btn btn-primary float-right"></input>
+  
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 align-content-center">
+           <div class="text-center mt-4">
+
+             <p>Phone: <a href="tel:4799354020">479-935-4020</a> |
+              Fax: <a href="fax:4793314629">479-332-4629</a>
+              </p>
+  
+             <p><a href="mailto:stonechapelkennel@gmail.com">stonechapelkennel@gmail.com</a></p>
+             <p><a href="https://goo.gl/maps/gu4bh89ya747YMxb6">2170 N. Sunshine Rd. Fayetteville, AR 72704</a></p>
+           </div>
+  
+            <div class="rounded overflow-hidden position-relative d-flex justify-content-center align-content-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d738.4315171925263!2d-94.22863161299294!3d36.09262144825208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96e049935bd75%3A0xfa49465c28c90847!2s2176%20N%20Sunshine%20Rd%2C%20Fayetteville%2C%20AR%2072704!5e0!3m2!1sen!2sus!4v1574730648282!5m2!1sen!2sus" width="600" height="360" frameborder="2" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <footer>
+      <div id="footerBar">
+        <div class="container">
+          <div class="row d-flex justify-content-between left-footer">
+            <div class="col-sm-4">
+              <a href="index.html">Home</a>
+              <br>
+              <a href="boarding.html">Boarding</a>
+              <br>
+              <a href="daycare.html">Doggie Daycare</a>
+              <br>
+              <a href="cattery.html">The Cattery</a>
+              <br>
+              <a href="grooming.html">Grooming</a>
+              <br>
+              <a href="about.html">Meet The Team</a>
+              <br>
+              <a href="contact.html">Contact</a>
+              <br>
+              <a href="https://doggiedashboard.com/users/12fce5b10832d2b8e3c0/new_client">New Client Registration</a>
+            </div>
+            <div class="col-sm-4 right-footer text-right ">
+              <p>
+                  <a class="" href="index.html">Stone Chapel Kennel & Cattery</a>
+                </p>
+              <!-- </div> -->
+              
+                <!-- <br> -->
+    
+              <!-- <div> -->
+                <p>
+                  <a href="https://goo.gl/maps/C8FG69pxjMNKMiTB9">2170 North Sunshine Road</a>
+                </p>
+              <!-- </div> -->
+    
+                <!-- <br> -->
+    
+              <!-- <div> -->
+                <p>
+                  <a href="https://goo.gl/maps/C8FG69pxjMNKMiTB9">Fayetteville, AR 72704</a>
+                </p>
+              <!-- </div> -->
+    
+              <!-- <br> -->
+            
+              <!-- <div> -->
+                <p class="text-primary">
+                  Phone: <a href="tel:4799354020">479-935-4020</a>
+                </p>
+                <p class=" text-primary">
+                  Fax: <a href="fax:4793314629">479-332-4629</a>
+                </p>
+              <!-- </div> -->
+    
+              <!-- <br> -->
+              <!-- <div> -->
+                <p class="mb">
+                  <a href="mailto:stoneshapelkennel@gmail.com">stonechapelkennel@gmail.com</a>
+                </p>
+              <!-- </div> -->
+              <p class="mb-0 d-inline-block">
+                <a class="mb-0 d-inline-block" href="https://instagram.com/stonechapelkennel">
+                  <i class="fab fa-instagram mb-0"></i>
+                </a>
+                <a class=" mb-0 d-inline-block" href="https://www.facebook.com/Stone-Chapel-Kennel-Cattery-394160804640495/">
+                  <i class="fab fa-facebook-square mb-0"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div id="bottomBar">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-sm-6 left-footer">
+              <span class="text-white">Copyright &copy; <span id="year" ></span> Stone Chapel Kennel & Cattery</span>
+            </div>
+    
+            <div class="col-sm-6 text-right right-footer">
+              <span class=" text-white"> Made with &lt3 by <a class="text-white white-link" href="expandnwa.com">E-XPAND</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+
+</html>
