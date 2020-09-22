@@ -6,10 +6,10 @@
   $message = $_POST['comments'];
   $from = 'noreply@expandnwa.com'; 
   $to = 'stonechapelkennel@gmail.com'; 
-  $subject = 'Message from Your Website';
+  $subject = 'Message From Stone Chapel Kennel';
   
   $body = 
-  "From: $fname $lname \n 
+  "From: $fname $lname \n
   E-Mail: $email\n 
   Phone Number: $phone\n
   Message:\n $message";

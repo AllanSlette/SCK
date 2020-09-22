@@ -2,25 +2,55 @@
   font-family: Calisto;
   src: url(/calisto-mt/calisto.ttf);
 }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .text-underline{
   text-decoration: underline !important;
 }
 body{
   font-family: Calisto;
+  /* background-color: whitesmoke; */
+  color: #333;
 }
+p{
+  font-size: 18px;
+}
+.btn:hover{
+  transform: scale(1.01);
+}
+
+.alert {
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+  left: 0rem;
+  width: 100%;
+  margin: 0 0;
+  opacity: 1 !important;
+  /* background: rgba(0, 68, 36, 0.9); */
+  /* color: white !important; */
+  border: none;
+  
+
+}
+
+
 @media (max-width: 376px) {
   #serviceCardRow .card-footer{
     /* font-family: Calisto; */
     font-size: 14px;
   }
-  #jumbotronIndex h1,{
-    font-size: 0px;
+  #jumbotronIndex h1{
+    font-size: 2rem !important;
   }
 
 
 
 }
-.card-img-top {
+#serviceCardRow .card-img-top {
   width: 100%;
   height: 20vw;
   object-fit: cover;
@@ -36,6 +66,13 @@ nav li{
 }
 nav li a{
   text-transform: uppercase;
+  
+}
+nav li a:hover{
+  text-decoration: none;
+}
+nav li:hover{
+  transform: scale(1.05);
 }
 
 
@@ -67,22 +104,41 @@ nav ul{
 #navHamburger{
   margin-top: -86px;
 }
-
+#hoursOfService .card-body,
+#daycareHoursOfService .card-body{
+  padding: 0rem 0rem;
+}
+#hoursOfService .table,
+#daycareHoursOfService .table{
+  margin-bottom: 0;
+}
 
 #jumbotronIndex{
-  background-image: url(/img/Homepage-bg-lowres.png);
+  background-image: url(/img/frontporch3.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 65vh;
+  /* background-size: cover; */
+  background-position: 0rem 0rem;/* was -18 when no attachment*/
+  height: 69vh;
+  background-attachment: fixed;
+  background-size: 114%;
+}
+
+@media(max-width: 768px){
+  #jumbotronIndex{
+    background-size: 171vh;
+    background-position: -17rem -9rem;
+  }
+  .green-overlay-index{
+    height: 171vh;
+  }
 }
 
 
 .green-overlay-index{
-  background:rgba(0, 68, 36,0.7);
+  background:rgba(0, 68, 36,0.5);
 
   left:0;
-  height:65vh;
+  height:69vh;
   /* opacity:0.7; */
 
 }
@@ -141,6 +197,9 @@ nav ul{
 #contactUsBelowCards{
   text-align: center;
 }
+#serviceCardRow .col-lg-3, #serviceCardRow .col-6{
+  padding: 0.4rem;
+}
 @media(min-width:768px){
   #anyQuestions{
     text-align: right;
@@ -179,6 +238,15 @@ nav ul{
   background-size: contain;
 
 }
+/* #ourTeamCardRow .col-md-3,
+#ourTeamCardRow .col,
+#ourTeamCardRow .col-6{
+  display: flex;
+  align-self: stretch; 
+}*/
+#ourTeamCardRow .card-img-top{
+  height: 30vh !important;
+}
 
 /* OUR KENNEL----------------------------------------- */
 #ourKennelText p{
@@ -191,8 +259,13 @@ nav ul{
   display: flex;
   max-width: 378px;
   justify-self: center;
+  object-fit: contain;
   
-  object-fit:contain;
+}
+#ourKennelIndex .row #ourKennelImg {
+  display: flex;
+  justify-items: start;
+  background-color: red;
   
 }
 /* smallest until medium size */
@@ -203,6 +276,9 @@ nav ul{
   }
   #ourKennelImg{
     order: 2;
+  }
+  #ourKennelIndex #ourKennelImg {
+    justify-items: center;
   }
 }
 
@@ -215,6 +291,10 @@ nav ul{
   background-color: black;
   /* margin: auto; */
 }
+/*HOURS OF Service--------------------------------------------*/
+/* #hoursOfService.card{
+  text-emphasis: center !important;
+} */
 #contactRow{
   margin-top: 67px ;
 }
@@ -223,6 +303,63 @@ nav ul{
   margin: 0; */
   background-color: #DEE7E7;
   
+}
+.new-footer{
+  /* padding: 0;
+  margin: 0; */
+  color: #004424;
+  background-color: #DEE7E7;
+  
+}
+
+.new-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* background-color: lightcoral; */
+}
+
+.new-footer .container ul {
+  list-style: none;
+}
+
+.new-footer .r-footer{
+  margin: 0 !important;
+  /* height: 100%; */
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  /* background-color: lightblue; */
+
+}
+
+.new-footer .r-footer {
+  text-align: right;
+}
+
+.new-footer .l-footer {
+  margin: 0 !important;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* background-color: lightblue; */
+  
+}
+
+@media(max-width: 410px) {
+  .new-footer .container {
+    flex-direction: column;
+  }
+  .new-footer .r-footer {
+    text-align: left;
+  }
+  .new-footer .l-footer {
+    border-bottom: 1px solid #004424;
+  }
 }
 
 /* .left-footer{
@@ -253,6 +390,20 @@ nav ul{
   color: white !important;
 }
 
+#new-bottomBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #004424;
+}
+
+@media (max-width: 662px) {
+  #new-bottomBar .container {
+    flex-direction: column !important;
+    text-align: center;
+    
+  }
+}
+
 @media (max-width: 576px) { 
   /* 365 */
   .right-footer{
@@ -269,13 +420,21 @@ nav ul{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:37vh;
+  height:45vh;
 }
 .green-overlay-default{
   background:rgba(0, 68, 36,0.7);
   left:0;
-  height:37vh;
+  height:45vh;
   
+}
+
+#boardingCardRow .card-img-top {
+  height: 15rem;
+  /* width: max; */
+}
+#classic-card-img-top img{
+ 
 }
 
 
@@ -284,7 +443,10 @@ nav ul{
   padding: auto;
   box-sizing: border-box;
   width: 80%;
-  
+  border-radius: 0.25rem !important;
+}
+.dark-box{
+  border-radius: 0.25rem;
 }
 
 
@@ -342,13 +504,74 @@ nav ul{
   flex-grow:1;
 }
 
+.alert img{
+  width: 2%;
+}
+.alert-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+#advertisement-covid .img-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+#advertisement-covid .card {
+  border: 1px solid #004424;
+}
+
+#advertisement-covid .card img{
+  width: 40%;
+  /* padding: 1rem; */
+  /* background: rgb(0, 68, 36, 0.1);
+  border-radius: 1rem; */
+}
+
+#advertisement-covid .card-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* align-content: center; */
+}
+#advertisement-covid .card-body p {
+  margin-left: 1rem;
+}
+
+@media(max-width:742px){
+  #advertisement-covid .card-body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #advertisement-covid .card img{
+    width: 20%;
+    /* margin-left: 30rem;
+    margin-right: auto; */
+    /* padding: 1rem; */
+    padding-bottom: .5rem;
+    
+  }
+  #advertisement-covid .card-body p {
+    margin-left: 0;
+  }
+}
+
+
 /* START DAYCARE==================================================== */
 #jumbotronDaycare{
   background-image: url(/img/daycareJumbotron.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:37vh;
+  height:45vh;
+}
+#ourPlayZones img{
+  height: 312px;
+  display: flex;
+  justify-self: center;
 }
 @media (max-width: 576px) {
   #whatIsDoggyDaycareImg{
@@ -365,6 +588,7 @@ nav ul{
   #OurPlayZonesText{
     order: 1;
   }
+
   
 }
 #ourPlayZonesImg
@@ -379,7 +603,7 @@ nav ul{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:37vh;
+  height:45vh;
 }
 
 @media (max-width: 768px) {
@@ -397,8 +621,14 @@ nav ul{
   }
 }
 
+#kittyGallery .row .col-md-3{
+  padding: .5rem;
+  
+}
+
 .gallery-img-size{
-  height: 245px;
+  /* height: 245px; */
+  height: 30vh;
 }
 
 /* START GROOMING=================================================================== */
@@ -407,7 +637,7 @@ nav ul{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:37vh;
+  height:45vh;
 }
 /* START ABOUT=================================================================== */
 #jumbotronAbout{
@@ -415,7 +645,7 @@ nav ul{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:37vh;
+  height:45vh;
 }
 .transform-105:hover{
   transform: scale(1.05);
@@ -426,5 +656,9 @@ nav ul{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:37vh;
+  height:45vh;
+}
+
+#contactRow p{
+  font-size: 1.5rem;
 }
