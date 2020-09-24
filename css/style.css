@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 .text-underline{
   text-decoration: underline !important;
@@ -14,6 +15,7 @@ body{
   font-family: Calisto;
   /* background-color: whitesmoke; */
   color: #333;
+  
 }
 p{
   font-size: 18px;
@@ -249,7 +251,7 @@ nav ul{
 }
 
 /* OUR KENNEL----------------------------------------- */
-#ourKennelText p{
+#ourKennelText p {
   text-align: left;
 }
 #ourKennelText h2{
@@ -262,11 +264,11 @@ nav ul{
   object-fit: contain;
   
 }
-#ourKennelIndex .row #ourKennelImg {
+
+ 
+#ourKennelImg{
   display: flex;
-  justify-items: start;
-  background-color: red;
-  
+  justify-content: start;
 }
 /* smallest until medium size */
 @media(max-width:992px){
@@ -274,12 +276,16 @@ nav ul{
     text-align: left !important;
     order: 1;
   }
-  #ourKennelImg{
+  #ourKennelIndex #ourKennelImg{
     order: 2;
+    display: flex;
+    flex-direction: columnl;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    
   }
-  #ourKennelIndex #ourKennelImg {
-    justify-items: center;
-  }
+  
 }
 
 /* CONTACT US---------------------------------------------------- */
@@ -591,7 +597,7 @@ nav ul{
 
   
 }
-#ourPlayZonesImg
+/* #ourPlayZonesImg */
 @media(max-width:768px){
   .left-align-md-and-less{
     text-align: left !important;
