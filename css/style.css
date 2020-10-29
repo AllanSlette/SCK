@@ -627,10 +627,19 @@ nav ul{
   }
 }
 
-#kittyGallery .row .col-md-3{
+#kittyGallery .row .col-md-4{
   padding: .5rem;
   
 }
+
+@media(max-width: 768px) {
+  #kittyGallery .row img {
+    height:674px;
+    width:506px;
+  }
+}
+
+
 
 .gallery-img-size{
   /* height: 245px; */
