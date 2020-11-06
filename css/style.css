@@ -579,11 +579,11 @@ nav ul{
   display: flex;
   justify-self: center;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #whatIsDoggyDaycareImg{
     padding-left: 0px;
 
-    margin-left: -5px;
+    /* margin-left: -5px; */
   }
   /* #ourPlayZones{
     margin-left: -13px;
@@ -629,6 +629,12 @@ nav ul{
 
 #kittyGallery .row .col-md-4{
   padding: .5rem;
+  
+}
+
+#kittyGallery .row img {
+  max-width: 358px;
+  max-height: 477px;
   
 }
 
