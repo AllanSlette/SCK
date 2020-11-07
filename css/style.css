@@ -632,11 +632,11 @@ nav ul{
   
 }
 
-#kittyGallery .row img {
+/* #kittyGallery .row img {
   max-width: 358px;
   max-height: 477px;
   
-}
+} */
 
 @media(max-width: 768px) {
   #kittyGallery .row img {
