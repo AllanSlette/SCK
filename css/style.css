@@ -671,6 +671,10 @@ nav ul{
 .transform-105:hover{
   transform: scale(1.05);
 }
+
+.info {
+  color: #001E10;
+}
 /* START CONTACT=================================================================== */
 #jumbotronContact{
   background-image: url(/img/contactUsShowcase.jpg);
