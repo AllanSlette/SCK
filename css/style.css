@@ -37,7 +37,12 @@ p{
   border: none;
   
 
+
 }
+
+/* .row {
+  margin-bottom: 3rem;
+} */
 
 
 @media (max-width: 376px) {
@@ -249,7 +254,54 @@ nav ul{
 #ourTeamCardRow .card-img-top{
   height: 30vh !important;
 }
+#our-team .our-team-logo {
+  width: 70.9%;
+  /* width: 80px; */
 
+}
+
+#our-team [class^="col"] {
+  margin-bottom: 3rem;
+  
+}
+
+
+#our-team .owner-row {
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media(min-width: 768px)  {
+  #our-team .owner-row {
+    flex-direction: row-reverse;
+    
+  }
+}
+
+#our-team .team-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#our-team .team-row .card {
+  /* width: 100%; */
+  width: 280px;
+  margin: 0 2rem 3rem;
+}
+
+@media(max-width: 768px ) {
+  #our-team .team-row .card{
+    width: 0px;
+    width: 100%;
+    margin: 0 0 3rem;
+  }
+}
+
+@media(min-width: 1200px) {
+  #our-team .team-row .card {
+    width: 300px;
+  }
+}
 /* OUR KENNEL----------------------------------------- */
 #ourKennelText p {
   text-align: left;
