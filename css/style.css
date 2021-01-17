@@ -565,6 +565,34 @@ nav ul{
   }
 }
 
+#z-suite-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#z-suite-row .card {
+  max-width: 400px;
+  margin: 3rem 3rem;
+  /* width: 300px; */
+}
+#z-suite-row .img-fluid {
+  /* width:100%;
+  height: auto; */
+  height: 25.5rem;
+}
+
+/* mobile view */
+@media (max-width: 576px) {
+  #z-suite-row .img-fluid {
+    width: 100%;
+  }
+  
+}
+
+.ob-fit {
+  object-fit: cover !important;
+}
 
 /* START DAYCARE==================================================== */
 #jumbotronDaycare{
@@ -632,18 +660,48 @@ nav ul{
   
 }
 
+
+#
+
 /* #kittyGallery .row img {
   max-width: 358px;
   max-height: 477px;
   
 } */
+{}
+#kittyGallery .row img {
+  max-height: 530px;
+  max-width: 397px;
+  height: auto;
+  width: auto;
+}
 
 @media(max-width: 768px) {
   #kittyGallery .row img {
+    width: auto;
     height:674px;
-    width:506px;
+    /* width: auto; */
+    /* width: 506px; */
+  
+  }
+  #z-cat-gallery img {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
+#z-cat-gallery{
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#z-cat-gallery img {
+  max-width: 400px;
+  margin: 2rem 2rem;
+}
+
+/* mobile */
 
 
 
