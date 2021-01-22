@@ -267,8 +267,8 @@ nav ul{
 
 
 #our-team .owner-row {
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 @media(min-width: 768px)  {
   #our-team .owner-row {
@@ -281,12 +281,14 @@ nav ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 #our-team .team-row .card {
   /* width: 100%; */
   width: 280px;
   margin: 0 2rem 3rem;
+  position: static;
 }
 
 @media(max-width: 768px ) {
