@@ -476,10 +476,10 @@ nav ul{
 /* START BOARDING PAGE ========================================================*/
 
 #jumbotronBoarding{
-  background-image: url(/img/jumbotronBoardingPic.png);
+  background-image: url(/img/Boarding.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   height:45vh;
 }
 .green-overlay-default{
@@ -708,10 +708,12 @@ nav ul{
 
 /* START GROOMING=================================================================== */
 #jumbotronGrooming{
-  background-image: url(/img/groomingjumbotron.png);
+  background-image: url(/img/Grooming.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center top; */
+  background-position: 0px -101px;
+
   height:45vh;
 }
 /* START ABOUT=================================================================== */
