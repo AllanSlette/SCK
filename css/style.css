@@ -708,13 +708,21 @@ nav ul{
 
 /* START GROOMING=================================================================== */
 #jumbotronGrooming{
-  background-image: url(/img/Grooming.jpg);
+  background-image: url(/img/NWA-Groooming.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center top; */
-  background-position: 0px -101px;
+  background-position: 0px -129px;
 
   height:45vh;
+}
+
+@media(max-width: 600px) {
+  #jumbotronGrooming{
+    background-position:-85px 13px ;
+    /* background-image: url(/img/Lori.jpg) */
+    
+  }
 }
 /* START ABOUT=================================================================== */
 #jumbotronAbout{
