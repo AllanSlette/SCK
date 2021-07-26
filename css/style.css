@@ -1,26 +1,24 @@
-@font-face{
+@font-face {
   font-family: Calisto;
   src: url(/calisto-mt/calisto.ttf);
 }
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
-.text-underline{
+.text-underline {
   text-decoration: underline !important;
 }
-body{
+body {
   font-family: Calisto;
   /* background-color: whitesmoke; */
   color: #333;
-  
 }
-p{
+p {
   font-size: 18px;
 }
-.btn:hover{
+.btn:hover {
   transform: scale(1.01);
 }
 
@@ -35,27 +33,20 @@ p{
   /* background: rgba(0, 68, 36, 0.9); */
   /* color: white !important; */
   border: none;
-  
-
-
 }
 
 /* .row {
   margin-bottom: 3rem;
 } */
 
-
 @media (max-width: 376px) {
-  #serviceCardRow .card-footer{
+  #serviceCardRow .card-footer {
     /* font-family: Calisto; */
     font-size: 14px;
   }
-  #jumbotronIndex h1{
+  #jumbotronIndex h1 {
     font-size: 2rem !important;
   }
-
-
-
 }
 #serviceCardRow .card-img-top {
   width: 100%;
@@ -63,130 +54,123 @@ p{
   object-fit: cover;
 }
 
-.nav-logo{
-  height:120px;
+.nav-logo {
+  height: 120px;
 }
 
-nav li{
+nav li {
   display: inline-block;
-  
 }
-nav li a{
+nav li a {
   text-transform: uppercase;
-  
 }
-nav li a:hover{
+nav li a:hover {
   text-decoration: none;
 }
-nav li:hover{
+nav li:hover {
   transform: scale(1.05);
 }
 
-
 /* nav{
-  
+
 } */
-nav ul{
+nav ul {
   text-align: center;
   padding: 0;
   margin: 0;
   justify-content: space-between;
 }
 
-.nav-line{
+.nav-line {
   display: inline-block;
   width: 10%;
   align-self: center;
-  
-  margin-bottom:30px;
+
+  margin-bottom: 30px;
   position: static;
 }
 
-@media(max-width:992px){
-  .nav-line{
+@media (max-width: 992px) {
+  .nav-line {
     display: none;
   }
 }
 
-#navHamburger{
+#navHamburger {
   margin-top: -86px;
 }
 #hoursOfService .card-body,
-#daycareHoursOfService .card-body{
+#daycareHoursOfService .card-body {
   padding: 0rem 0rem;
 }
 #hoursOfService .table,
-#daycareHoursOfService .table{
+#daycareHoursOfService .table {
   margin-bottom: 0;
 }
 
-#jumbotronIndex{
+#jumbotronIndex {
   background-image: url(/img/frontporch3.jpeg);
   background-repeat: no-repeat;
   /* background-size: cover; */
-  background-position: 0rem 0rem;/* was -18 when no attachment*/
+  background-position: 0rem 0rem; /* was -18 when no attachment*/
   height: 69vh;
   background-attachment: fixed;
   background-size: 114%;
 }
 
-@media(max-width: 768px){
-  #jumbotronIndex{
+@media (max-width: 768px) {
+  #jumbotronIndex {
     background-size: 171vh;
     background-position: -17rem -9rem;
   }
-  .green-overlay-index{
+  .green-overlay-index {
     height: 171vh;
   }
 }
 
+.green-overlay-index {
+  background: rgba(0, 68, 36, 0.5);
 
-.green-overlay-index{
-  background:rgba(0, 68, 36,0.5);
-
-  left:0;
-  height:69vh;
+  left: 0;
+  height: 69vh;
   /* opacity:0.7; */
-
 }
 
-
-.showcase-divider{
+.showcase-divider {
   /* color:#FFFFFF; */
-  background-color:#FFFFFF;
-  height:1px;
+  background-color: #ffffff;
+  height: 1px;
   width: 50vw;
 }
-.center-showcase-text{
+.center-showcase-text {
   /* height: inherit; */
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   padding: 0, 20px;
-  position:relative;
+  position: relative;
   color: white;
-  opacity: 1; 
+  opacity: 1;
   opacity: initial;
-  display:block;
+  display: block;
 }
 
-.link-underline{
+.link-underline {
   text-decoration: underline !important;
-  
 }
-.link-underline:hover{
+.link-underline:hover {
   font-weight: bold !important;
 }
 
-@media(max-width: 576px){
-  #indexJumbotronText h3{
+@media (max-width: 576px) {
+  #indexJumbotronText h3 {
     font-size: 14px !important;
   }
-  #indexJumbotronText h1{
+  #indexJumbotronText h1 {
     font-size: 20px !important;
   }
-  #indexJumbotronText a{
+  #indexJumbotronText a {
     font-size: 14px !important;
   }
 }
@@ -198,26 +182,27 @@ nav ul{
   }
 } */
 /* CARDS AREA -------------------------------------------------- */
-#anyQuestions{
+#anyQuestions {
   text-align: center;
 }
-#contactUsBelowCards{
+#contactUsBelowCards {
   text-align: center;
 }
-#serviceCardRow .col-lg-3, #serviceCardRow .col-6{
+#serviceCardRow .col-lg-3,
+#serviceCardRow .col-6 {
   padding: 0.4rem;
 }
-@media(min-width:768px){
-  #anyQuestions{
+@media (min-width: 768px) {
+  #anyQuestions {
     text-align: right;
   }
-  #contactUsBelowCards{
+  #contactUsBelowCards {
     text-align: left;
   }
 }
 
 /*ABOUT US CSS-------------------------------------------------- */
-#aboutUsDiv1{
+#aboutUsDiv1 {
   /* height:254.4px; */
   /* height: 200px; */
   height: auto;
@@ -228,52 +213,47 @@ nav ul{
   background-position: center;
   background-size: cover;
 }
-#trickyImage{
+#trickyImage {
   display: flex;
   max-width: 100%;
   justify-self: center;
-  
-  object-fit:contain;
+
+  object-fit: contain;
   margin-left: auto;
   margin-right: auto;
 }
 /* #aboutUsParagraph{
-   max-width:100%; 
+   max-width:100%;
 } */
-#trickyDiv{
+#trickyDiv {
   background-image: url(/img/AboutUsPics.png);
   background-size: contain;
-
 }
 /* #ourTeamCardRow .col-md-3,
 #ourTeamCardRow .col,
 #ourTeamCardRow .col-6{
   display: flex;
-  align-self: stretch; 
+  align-self: stretch;
 }*/
-#ourTeamCardRow .card-img-top{
+#ourTeamCardRow .card-img-top {
   height: 30vh !important;
 }
 #our-team .our-team-logo {
   width: 70.9%;
   /* width: 80px; */
-
 }
 
-#our-team [class^="col"] {
+#our-team [class^='col'] {
   margin-bottom: 3rem;
-  
 }
-
 
 #our-team .owner-row {
   flex-direction: column-reverse;
   justify-content: center;
 }
-@media(min-width: 768px)  {
+@media (min-width: 768px) {
   #our-team .owner-row {
     flex-direction: row-reverse;
-    
   }
 }
 
@@ -281,70 +261,66 @@ nav ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 #our-team .team-row .card {
   /* width: 100%; */
   width: 280px;
-  margin: 0 2rem 3rem;
+  margin: 0 1rem 3rem;
   position: static;
 }
 
-@media(max-width: 768px ) {
-  #our-team .team-row .card{
+@media (max-width: 768px) {
+  #our-team .team-row .card {
     width: 0px;
     width: 100%;
     margin: 0 0 3rem;
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   #our-team .team-row .card {
-    width: 300px;
+    width: 245px;
   }
 }
 /* OUR KENNEL----------------------------------------- */
 #ourKennelText p {
   text-align: left;
 }
-#ourKennelText h2{
+#ourKennelText h2 {
   text-align: center;
 }
-#kennelImage{
+#kennelImage {
   display: flex;
   max-width: 378px;
   justify-self: center;
   object-fit: contain;
-  
 }
 
- 
-#ourKennelImg{
+#ourKennelImg {
   display: flex;
   justify-content: start;
 }
 /* smallest until medium size */
-@media(max-width:992px){
-  #ourKennelText p{
+@media (max-width: 992px) {
+  #ourKennelText p {
     text-align: left !important;
     order: 1;
   }
-  #ourKennelIndex #ourKennelImg{
+  #ourKennelIndex #ourKennelImg {
     order: 2;
     display: flex;
     flex-direction: columnl;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    
   }
-  
 }
 
 /* CONTACT US---------------------------------------------------- */
 
-.thick-black-stylish-line{
+.thick-black-stylish-line {
   width: 49vw;
   height: 1px;
   align-self: center;
@@ -355,21 +331,19 @@ nav ul{
 /* #hoursOfService.card{
   text-emphasis: center !important;
 } */
-#contactRow{
-  margin-top: 67px ;
+#contactRow {
+  margin-top: 67px;
 }
-#footerBar{
+#footerBar {
   /* padding: 0;
   margin: 0; */
-  background-color: #DEE7E7;
-  
+  background-color: #dee7e7;
 }
-.new-footer{
+.new-footer {
   /* padding: 0;
   margin: 0; */
   color: #004424;
-  background-color: #DEE7E7;
-  
+  background-color: #dee7e7;
 }
 
 .new-footer .container {
@@ -383,16 +357,15 @@ nav ul{
   list-style: none;
 }
 
-.new-footer .r-footer{
+.new-footer .r-footer {
   margin: 0 !important;
   /* height: 100%; */
   text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  /* background-color: lightblue; */
 
+  /* background-color: lightblue; */
 }
 
 .new-footer .r-footer {
@@ -407,10 +380,9 @@ nav ul{
   justify-content: space-between;
 
   /* background-color: lightblue; */
-  
 }
 
-@media(max-width: 410px) {
+@media (max-width: 410px) {
   .new-footer .container {
     flex-direction: column;
   }
@@ -423,17 +395,16 @@ nav ul{
 }
 
 /* .left-footer{
-  /* will be text center on mobile view 
+  /* will be text center on mobile view
   text-align: center;
 } */
-.right-footer{
+.right-footer {
   /* will be text center on mobile view */
   text-align: center;
 }
-.right-footer p{
+.right-footer p {
   margin-bottom: -1px;
   margin-top: 4px;
-  
 }
 /* .right-footer{
 
@@ -443,10 +414,10 @@ nav ul{
   /* margin-bottom: 2px;
 } */
 
-#bottomBar{
+#bottomBar {
   background-color: #004424;
 }
-#bottomBar a{
+#bottomBar a {
   color: white !important;
 }
 
@@ -460,111 +431,106 @@ nav ul{
   #new-bottomBar .container {
     flex-direction: column !important;
     text-align: center;
-    
   }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   /* 365 */
-  .right-footer{
+  .right-footer {
     text-align: center !important;
   }
-  .left-footer{
+  .left-footer {
     text-align: center !important;
   }
 }
 /* START BOARDING PAGE ========================================================*/
 
-#jumbotronBoarding{
+#jumbotronBoarding {
   background-image: url(/img/Boarding.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  height:45vh;
+  height: 45vh;
 }
-.green-overlay-default{
-  background:rgba(0, 68, 36,0.7);
-  left:0;
-  height:45vh;
-  
+.green-overlay-default {
+  background: rgba(0, 68, 36, 0.7);
+  left: 0;
+  height: 45vh;
 }
 
 #boardingCardRow .card-img-top {
   height: 15rem;
   /* width: max; */
 }
-#classic-card-img-top img{
- 
+#classic-card-img-top img {
 }
 
-
-.fancy-floaty-box{
-  border: 1px  solid black;
+.fancy-floaty-box {
+  border: 1px solid black;
   padding: auto;
   box-sizing: border-box;
   width: 80%;
   border-radius: 0.25rem !important;
 }
-.dark-box{
+.dark-box {
   border-radius: 0.25rem;
 }
 
-
-.we-provide-box-left{
-  width:80%;
+.we-provide-box-left {
+  width: 80%;
   margin-bottom: 18px;
   margin-right: auto !important;
-  border: 1px solid #393E41;
+  border: 1px solid #393e41;
 }
-.we-provide-box-right{
-  width:80%;
+.we-provide-box-right {
+  width: 80%;
   margin-bottom: 18px;
   margin-left: auto !important;
-  border: 1px solid #393E41;
+  border: 1px solid #393e41;
 }
-.dark-box{
-  border: 1px solid #393E41;
+.dark-box {
+  border: 1px solid #393e41;
   /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center;
   /* height: 2rem; */
 }
-.dark-box p{
+.dark-box p {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
-@media(max-width:576px){
-  .we-provide-box-left{
-    width:80%;
+@media (max-width: 576px) {
+  .we-provide-box-left {
+    width: 80%;
     margin-bottom: 18px;
-    border: 1px solid #393E41;
+    border: 1px solid #393e41;
     margin-right: auto !important;
     margin-left: auto !important;
   }
-  .we-provide-box-right{
-    width:80%;
+  .we-provide-box-right {
+    width: 80%;
     margin-bottom: 18px;
-    border: 1px solid #393E41;
+    border: 1px solid #393e41;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 }
 
-#boardingCardRow .card{
+#boardingCardRow .card {
   display: flex;
   flex-direction: column;
-  flex:1;
+  flex: 1;
   flex-grow: 1;
 }
-#boardingCardRow .card .card-body{
+#boardingCardRow .card .card-body {
   display: flex;
   flex-direction: column;
-  flex:1;
-  flex-grow:1;
+  flex: 1;
+  flex-grow: 1;
 }
 
-.alert img{
+.alert img {
   width: 2%;
 }
 .alert-inner {
@@ -572,7 +538,7 @@ nav ul{
   justify-content: space-between;
 }
 
-#advertisement-covid .img-wrapper{
+#advertisement-covid .img-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -581,14 +547,14 @@ nav ul{
   border: 1px solid #004424;
 }
 
-#advertisement-covid .card img{
+#advertisement-covid .card img {
   width: 40%;
   /* padding: 1rem; */
   /* background: rgb(0, 68, 36, 0.1);
   border-radius: 1rem; */
 }
 
-#advertisement-covid .card-body{
+#advertisement-covid .card-body {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -598,7 +564,7 @@ nav ul{
   margin-left: 1rem;
 }
 
-@media(max-width:742px){
+@media (max-width: 742px) {
   #advertisement-covid .card-body {
     display: flex;
     flex-direction: column;
@@ -606,35 +572,33 @@ nav ul{
     justify-content: center;
   }
 
-  #advertisement-covid .card img{
+  #advertisement-covid .card img {
     width: 20%;
     /* margin-left: 30rem;
     margin-right: auto; */
     /* padding: 1rem; */
-    padding-bottom: .5rem;
-    
+    padding-bottom: 0.5rem;
   }
   #advertisement-covid .card-body p {
     margin-left: 0;
   }
 }
 
-
 /* START DAYCARE==================================================== */
-#jumbotronDaycare{
+#jumbotronDaycare {
   background-image: url(/img/daycareJumbotron.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:45vh;
+  height: 45vh;
 }
-#ourPlayZones img{
+#ourPlayZones img {
   height: 312px;
   display: flex;
   justify-self: center;
 }
 @media (max-width: 768px) {
-  #whatIsDoggyDaycareImg{
+  #whatIsDoggyDaycareImg {
     padding-left: 0px;
 
     /* margin-left: -5px; */
@@ -642,112 +606,105 @@ nav ul{
   /* #ourPlayZones{
     margin-left: -13px;
   } */
-  #OurPlayZonesImg{
-    order:2;
+  #OurPlayZonesImg {
+    order: 2;
   }
-  #OurPlayZonesText{
+  #OurPlayZonesText {
     order: 1;
   }
-
-  
 }
 /* #ourPlayZonesImg */
-@media(max-width:768px){
-  .left-align-md-and-less{
+@media (max-width: 768px) {
+  .left-align-md-and-less {
     text-align: left !important;
   }
 }
 /* START CATTERY========================================================= */
-#jumbotronCattery{
+#jumbotronCattery {
   background-image: url(/img/catteryShowcase.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:45vh;
+  height: 45vh;
 }
 
 @media (max-width: 768px) {
-  #catteryContactAndButtons{
+  #catteryContactAndButtons {
     order: 2;
   }
-  #catteryRateBoxes{
-    order:1;
+  #catteryRateBoxes {
+    order: 1;
   }
-  
 }
 @media (min-width: 768px) {
-  catteryNewClientButton{
+  catteryNewClientButton {
     margin-left: 3px;
   }
 }
 
-#kittyGallery .row .col-md-4{
-  padding: .5rem;
-  
+#kittyGallery .row .col-md-4 {
+  padding: 0.5rem;
 }
 
 /* #kittyGallery .row img {
   max-width: 358px;
   max-height: 477px;
-  
+
 } */
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   #kittyGallery .row img {
-    height:674px;
-    width:506px;
+    height: 674px;
+    width: 506px;
   }
 }
 
-
-
-.gallery-img-size{
+.gallery-img-size {
   /* height: 245px; */
   height: 30vh;
 }
 
 /* START GROOMING=================================================================== */
-#jumbotronGrooming{
+#jumbotronGrooming {
   background-image: url(/img/NWA-Groooming.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center top; */
   background-position: 0px -129px;
 
-  height:45vh;
+  height: 45vh;
 }
 
-@media(max-width: 600px) {
-  #jumbotronGrooming{
-    background-position:-85px 13px ;
+@media (max-width: 600px) {
+  #jumbotronGrooming {
+    background-position: -85px 13px;
     /* background-image: url(/img/Lori.jpg) */
-    
   }
 }
 /* START ABOUT=================================================================== */
-#jumbotronAbout{
+#jumbotronAbout {
   background-image: url(/img/aboutUsShowcase.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:45vh;
+  height: 45vh;
 }
-.transform-105:hover{
+.transform-105:hover {
   transform: scale(1.05);
 }
 
 .info {
-  color: #001E10;
+  color: #001e10;
 }
 /* START CONTACT=================================================================== */
-#jumbotronContact{
+#jumbotronContact {
   background-image: url(/img/contactUsShowcase.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:45vh;
+  height: 45vh;
 }
 
-#contactRow p{
+#contactRow p {
   font-size: 1.5rem;
 }
