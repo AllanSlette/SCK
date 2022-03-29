@@ -18,6 +18,10 @@ body {
 p {
   font-size: 18px;
 }
+
+strong {
+  font-weight: bold;
+}
 .btn:hover {
   transform: scale(1.01);
 }
@@ -459,7 +463,7 @@ nav ul {
 }
 
 #boardingCardRow .card-img-top {
-  height: 15rem;
+  height: 25rem;
   /* width: max; */
 }
 
@@ -590,10 +594,10 @@ nav ul {
   background-position: center;
   height: 45vh;
 }
+
 #ourPlayZones img {
   height: 312px;
-  display: flex;
-  justify-self: center;
+  /* display: flex; */
 }
 @media (max-width: 768px) {
   #whatIsDoggyDaycareImg {
@@ -610,7 +614,12 @@ nav ul {
   #OurPlayZonesText {
     order: 1;
   }
+  #play-zone-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 }
+
 /* #ourPlayZonesImg */
 @media (max-width: 768px) {
   .left-align-md-and-less {
