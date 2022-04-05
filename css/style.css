@@ -113,19 +113,28 @@ nav ul {
 }
 
 #jumbotronIndex {
-  background-image: url(/img/frontporch3.jpeg);
+  background-image: url(/img/home\ page.jpeg);
   background-repeat: no-repeat;
   /* background-size: cover; */
-  background-position: 0rem 0rem; /* was -18 when no attachment*/
+  background-position: 0rem -6rem; /* was -18 when no attachment*/
   height: 69vh;
   background-attachment: fixed;
-  background-size: 114%;
+  background-size: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1450px) {
   #jumbotronIndex {
     background-size: 171vh;
     background-position: -17rem -9rem;
+  }
+  .green-overlay-index {
+    height: 171vh;
+  }
+}
+@media (max-width: 768px) {
+  #jumbotronIndex {
+    background-size: 171vh;
+    background-position: -31rem -5rem;
   }
   .green-overlay-index {
     height: 171vh;
@@ -702,6 +711,10 @@ nav ul {
 
 .info {
   color: #001e10;
+  font-size: 1rem;
+}
+.thin-divider {
+  margin: 0.25rem;
 }
 /* START CONTACT=================================================================== */
 #jumbotronContact {
