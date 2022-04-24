@@ -2,6 +2,7 @@
   font-family: Calisto;
   src: url(/calisto-mt/calisto.ttf);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,8 +16,9 @@ body {
   /* background-color: whitesmoke; */
   color: #333;
 }
-p {
-  font-size: 18px;
+p,
+ul {
+  font-size: 1.2rem;
 }
 
 strong {
@@ -124,8 +126,9 @@ nav ul {
 
 @media (max-width: 1450px) {
   #jumbotronIndex {
-    background-size: 171vh;
-    background-position: -17rem -9rem;
+    /* background-size: 171vh; */
+    /* background-position: -17rem -9rem; */
+    background-position: center bottom;
   }
   .green-overlay-index {
     height: 171vh;
@@ -459,16 +462,32 @@ nav ul {
 /* START BOARDING PAGE ========================================================*/
 
 #jumbotronBoarding {
-  background-image: url(/img/Boarding.jpg);
+  background-image: url(/img/stonechapelHIGHRES-26.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
-  height: 45vh;
+  background-attachment: fixed;
+  background-position: 0rem 2rem;
+  height: 55vh;
+  /* height: 45vh; */
 }
+#jumbotronBoarding .green-overlay-default {
+  background: rgba(0, 68, 36, 0.7);
+  left: 0;
+  height: 55vh;
+  /* height: 45vh; */
+}
+
+@media (max-width: 768px) {
+  #jumbotronBoarding {
+    background-position: center;
+  }
+}
+
 .green-overlay-default {
   background: rgba(0, 68, 36, 0.7);
   left: 0;
   height: 45vh;
+  /* height: 45vh; */
 }
 
 #boardingCardRow .card-img-top {
@@ -597,16 +616,33 @@ nav ul {
 
 /* START DAYCARE==================================================== */
 #jumbotronDaycare {
-  background-image: url(/img/daycareJumbotron.png);
+  background-image: url(/img/group\ daycare.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0rem -33rem;
+  /* background-position: center; */
   height: 45vh;
 }
 
 #ourPlayZones img {
   height: 312px;
   /* display: flex; */
+}
+
+@media (max-width: 1300px) {
+  #jumbotronDaycare {
+    background-position: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  #jumbotronDaycare {
+    background-image: url(/img/group\ daycare.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+  }
 }
 @media (max-width: 768px) {
   #whatIsDoggyDaycareImg {
@@ -682,18 +718,18 @@ nav ul {
 
 /* START GROOMING=================================================================== */
 #jumbotronGrooming {
-  background-image: url(/img/NWA-Groooming.jpg);
+  background-image: url(/img/NWA\ Dog\ Groomers.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center top; */
-  background-position: 0px -129px;
+  background-position: 0px -29vh;
 
   height: 45vh;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   #jumbotronGrooming {
-    background-position: -85px 13px;
+    background-position: center center;
     /* background-image: url(/img/Lori.jpg) */
   }
 }
